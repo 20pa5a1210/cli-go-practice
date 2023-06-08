@@ -1,0 +1,8 @@
+total 8
+drwxr-xr-x. 1 suryanarayana suryanarayana   50 Jun  8 18:54 .
+drwxr-xr-x. 1 suryanarayana suryanarayana 1178 Jun  8 14:59 ..
+-rw-r--r--. 1 suryanarayana suryanarayana    0 Jun  8 18:54 file.txt
+drwxr-xr-x. 1 suryanarayana suryanarayana   98 Jun  8 18:54 .git
+-rw-r--r--. 1 suryanarayana suryanarayana   31 Jun  8 15:02 go.mod
+-rw-r--r--. 1 suryanarayana suryanarayana 1580 Jun  8 18:54 main.go
+new line appended\new lineqwerty is worst passcode
