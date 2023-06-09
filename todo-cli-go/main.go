@@ -33,7 +33,7 @@ func repl(config *commands.TodoList) {
 		availableCommands := commands.GetCommands()
 		commandName, ok := availableCommands[command]
 		if !ok {
-			fmt.Println("Invalid Command!")
+    		fmt.Printf("Uncaught ReferenceError: %s is not defined",command)
 			continue
 		}
 		err := commandName.CallBack(config, args...)
