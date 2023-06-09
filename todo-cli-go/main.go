@@ -8,17 +8,16 @@ import (
 	"nerdypunk.me/commands"
 )
 
-
 func main() {
-    config := commands.TodoList{}
-    repl(&config)
+	config := commands.TodoList{}
+	repl(&config)
 }
 
 func repl(config *commands.TodoList) {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
-		fmt.Println("> ")
+		fmt.Printf("> ")
 		scanner.Scan()
 		text := scanner.Text()
 		cleaned := commands.Cleaned(text)
@@ -37,7 +36,7 @@ func repl(config *commands.TodoList) {
 			fmt.Println("Invalid Command!")
 			continue
 		}
-		err := commandName.CallBack(config,args...)
+		err := commandName.CallBack(config, args...)
 		if err != nil {
 			fmt.Println(err)
 		}
