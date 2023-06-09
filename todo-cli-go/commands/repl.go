@@ -35,26 +35,26 @@ func GetCommands() map[string]CliCommands {
 			Description: "Adds a task to the list",
 			CallBack:    Add_command,
 		},
-        "list": {
-            Title:       "list",
-            Description: "Lists all tasks",
-            CallBack:    List_command,
-        },
-        "done": {
-            Title:       "done",
-            Description: "Marks a task as done",
-            CallBack:    Done_command,
-        },
-        "read": {
-            Title:       "read",
-            Description: "Reads a task from the list",
-            CallBack:    Read_command,
-        },
-        "addfile": {
-            Title:       "addfile",
-            Description: "Adds a task to the list from file",
-            CallBack:    Add_todos_to_file,
-        },
+		"list": {
+			Title:       "list",
+			Description: "Lists all tasks",
+			CallBack:    List_command,
+		},
+		"done": {
+			Title:       "done",
+			Description: "Marks a task as done",
+			CallBack:    Done_command,
+		},
+		"read": {
+			Title:       "read",
+			Description: "Reads a task from the list",
+			CallBack:    Read_command,
+		},
+		"addfile": {
+			Title:       "addfile",
+			Description: "Adds a task to the list from file",
+			CallBack:    Add_todos_to_file,
+		},
 	}
 
 }

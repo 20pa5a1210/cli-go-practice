@@ -7,6 +7,7 @@ import (
 func Help_command(cfg *TodoList, args ...string) error {
     fmt.Println("                                              |       WELOCOME TO TODO APP              |");
     fmt.Println("                                              |       --------------------              |");
+	fmt.Println("                             Welcome to todo cli application")
 	commands := GetCommands()
 	fmt.Printf("%-10s %s\n", "Title", "Description")
 	fmt.Printf("%-10s %s\n", "-----", "-----------")
