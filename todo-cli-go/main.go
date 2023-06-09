@@ -8,26 +8,17 @@ import (
 	"nerdypunk.me/commands"
 )
 
-type Todo struct {
-	Task string
-	Done bool
-}
-
-type TodoList struct {
-	Tasks []Todo
-}
 
 func main() {
-	todoList := TodoList{}
-	repl(&todoList)
-
+    config := commands.TodoList{}
+    repl(&config)
 }
 
-func repl(config *TodoList) {
+func repl(config *commands.TodoList) {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for {
-		fmt.Println(" >")
+		fmt.Println("> ")
 		scanner.Scan()
 		text := scanner.Text()
 		cleaned := commands.Cleaned(text)
@@ -46,7 +37,7 @@ func repl(config *TodoList) {
 			fmt.Println("Invalid Command!")
 			continue
 		}
-		err := commandName.CallBack(args...)
+		err := commandName.CallBack(config,args...)
 		if err != nil {
 			fmt.Println(err)
 		}
