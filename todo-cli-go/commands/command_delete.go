@@ -13,7 +13,7 @@ func Delete_command(todos *TodoList, args ...string) error {
 		if taskNum == i {
 			todos.Tasks = append(todos.Tasks[:i], todos.Tasks[i+1:]...)
 			fmt.Println("Task deleted")
-			fmt.Println(task)
+			fmt.Println(task.Task)
 			return nil
 		}
 	}
