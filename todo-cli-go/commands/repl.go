@@ -55,10 +55,15 @@ func GetCommands() map[string]CliCommands {
 			Description: "Adds a task to the list from file",
 			CallBack:    Add_todos_to_file,
 		},
-		"delete":{
-			Title: 	 "delete",
+		"delete": {
+			Title:       "delete",
 			Description: "Deletes a task from the list",
 			CallBack:    Delete_command,
+		},
+		"edit": {
+			Title:       "edit",
+			Description: "Edits a task from the list",
+			CallBack:    Edit_Command,
 		},
 	}
 
